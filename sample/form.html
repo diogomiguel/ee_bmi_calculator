@@ -1,0 +1,59 @@
+<h1>BMI Calculator</h1>
+{exp:bmi_calculator:bmi_form form_id="form-bmi-calculator" return="/bmi"}
+	<fieldset>
+		<legend>Height</legend>
+		<ul>
+			<li>
+				<label for="bmi-calculator-cm">Centimetres (cm)</label>
+				<input type='text' id="bmi-calculator-cm" name="cm" />
+				<span>or</span>
+			</li>
+			<li>
+				<ul>
+					<li>
+						<label for="bmi-calculator-ft">Feet (ft)</label>
+						<input type='text' id="bmi-calculator-ft" name="ft" />
+					</li>
+					<li>
+						<label for="bmi-calculator-in">Inches (in)</label>
+						<input type='text' id="bmi-calculator-in" name="in" />
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</fieldset>
+
+	<fieldset>
+		<legend>Weight</legend>
+		<ul>
+			<li>
+				<label for="bmi-calculator-kg">Kilograms (kg)</label>
+				<input type='text' id="bmi-calculator-kg" name="kg" />
+				<span>or</span>
+			</li>
+			<li>
+				<ul>
+					<li>
+						<label for="bmi-calculator-st">Stones (st)</label>
+						<input type='text' id="bmi-calculator-st" name="st" />
+					</li>
+					
+					<li>
+						<label for="bmi-calculator-lb">Pounds (lb)</label>
+						<input type='text' id="bmi-calculator-lb" name="lb" />
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</fieldset>
+
+	<fieldset>
+		
+		<input type="submit" value="Calculate" />
+	</fieldset>
+{/exp:bmi_calculator:bmi_form}
+
+<h2>Your BMI is</h2>
+<span id="bmi-calculator-result">
+	{exp:bmi_calculator:my_bmi}
+</span>
