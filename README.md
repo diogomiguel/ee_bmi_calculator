@@ -1,6 +1,6 @@
 # BMI Calculator
 
-* Author: [Diogo Silva](https://github.com/diogomiguel)
+* Author: [Diogo Silva](https://github.com/diogomiguel/ee_bmi_calculator)
 
 ## Version 0.0.1
 
